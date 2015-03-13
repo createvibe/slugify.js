@@ -20,7 +20,7 @@ Slugify.parse('kääntää jotain minulle');  // kaantaa-jotain-minulle
 
 ### Using NodeJS
 ```javascript
-var Slugify = require('slugify').fromLocale('en');
+var Slugify = require('slugifyjs').fromLocale('en');
 
 Slugify.parse('slugify this for me please');		// slugify-this-for-me-please
 ```
