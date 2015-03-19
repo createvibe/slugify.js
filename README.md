@@ -13,7 +13,7 @@ Extensible, so you can build your own diacritic map (locale).
 ```javascript
 Slugify.parse('Iñtërnâtiônàlizætiøn');    // internationalizaetion
   
-Slugify.parse('C\'est déjà l\'été');      // c-est-deja-l-ete
+Slugify.parse('C’est Déjà L’été');        // cest-deja-lete
   
 Slugify.parse('Україна');                 // y
   
