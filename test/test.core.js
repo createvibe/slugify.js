@@ -24,12 +24,29 @@ describe('Slugify.js Core ->', function() {
 
 	});
 
+	it('should convert to lowercase', function(done) {
+
+		Slugify.parse('ABCDEF').should.equal('abcdef');
+		Slugify.parse('nMoPqRs').should.equal('nmopqrs');
+
+		done();
+
+	});
+
 	it('should strip spaces and hyphens from ends of string', function(done) {
 
 		Slugify.parse(' (!* /.?> test !').should.equal('test');
 		Slugify.parse('   (!* /.?> test with !  words   ').should.equal('test-with-words');
 		Slugify.parse('                                 ').should.equal('');
-		Slugify.parse('    %^&*!@#$$(*&^      %^&*+_)(&Y (* &^&*()    )(^&*()(*&^&*(    ').should.equal('');
+		Slugify.parse('  %^&*!@#$$(*&^      %^&*+_)(&Y (* &^&*()    )(^&*()(*&^&*(    ').should.equal('y');
+
+		done();
+
+	});
+
+	it('should strip single and double quotes', function(done) {
+
+		Slugify.parse('’"\'"').should.equal('');
 
 		done();
 
@@ -38,7 +55,8 @@ describe('Slugify.js Core ->', function() {
 	it('should strip diacritics', function(done) {
 
 		Slugify.parse('Iñtërnâtiônàlizætiøn').should.equal('internationalizaetion');
-		Slugify.parse('C\'est déjà l\'été').should.equal('c-est-deja-l-ete');
+		Slugify.parse('C’est Déjà L’été').should.equal('cest-deja-lete');
+		Slugify.parse('C\'est déjà l\'été').should.equal('cest-deja-lete');
 		Slugify.parse('kääntää jotain minulle').should.equal('kaantaa-jotain-minulle');
 
 		done();
