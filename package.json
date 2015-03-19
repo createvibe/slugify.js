@@ -1,0 +1,32 @@
+{
+  "name": "slugifyjs",
+  "version": "0.0.1",
+  "description": "Javascript slugify routine, handling diacritics / accents.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/createvibe/slugify.js.git"
+  },
+  "keywords": [
+    "slugify",
+    "slugifyjs",
+    "slugify-js",
+    "slug"
+  ],
+  "author": {
+    "name": "Anthony Matarazzo"
+  },
+  "license": "MIT",
+  "main": "./index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test":"mocha --reporter spec test/"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
+}

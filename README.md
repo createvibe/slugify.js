@@ -1,5 +1,9 @@
 # slugify.js
-Javascript slugify routine, handling diacritics / accents, with an English - Diacritic map.
+Javascript slugify routine, handling diacritics / accents.  
+
+Includes an English - Diacritic map.  
+
+Extensible, so you can build your own diacritic map (locale).
 
 *Note: This library is still being developed*
 
@@ -9,7 +13,7 @@ Javascript slugify routine, handling diacritics / accents, with an English - Dia
 ```javascript
 Slugify.parse('Iñtërnâtiônàlizætiøn');    // internationalizaetion
   
-Slugify.parse('C\'est déjà l\'été');      // cest-deja-lete
+Slugify.parse('C\'est déjà l\'été');      // c-est-deja-l-ete
   
 Slugify.parse('Україна');                 // y
   
