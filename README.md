@@ -5,7 +5,7 @@ Includes an English - Diacritic map.
 
 Extensible, so you can build your own diacritic map (locale).
 
-Install from npm via ` npm install slugify `
+Install from npm via ` npm install slugifyjs `
 
 *Note: This library is still being developed*
 
