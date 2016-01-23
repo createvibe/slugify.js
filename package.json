@@ -1,6 +1,6 @@
 {
   "name": "slugifyjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript slugify routine, handling diacritics / accents.",
   "repository": {
     "type": "git",
@@ -27,6 +27,11 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "should": "*"
+    "should": "*",
+    "grunt": "*",
+    "matchdep": "*",
+    "browserify": "*",
+    "uglifyify": "*",
+    "grunt-browserify": "*"
   }
 }

@@ -5,8 +5,6 @@ Includes an English - Diacritic map.
 
 Extensible, so you can build your own diacritic map (locale).
 
-*Note: This library is still being developed*
-
 # Examples
 
 ### Using the English locale
@@ -28,3 +26,16 @@ var Slugify = require('slugifyjs').fromLocale('en');
 
 Slugify.parse('slugify this for me please');		// slugify-this-for-me-please
 ```
+
+# NPM
+Install with npm: `npm install slugifyjs`
+
+# Contributing
+Use `grunt dev` to test your changes with a version that is not uglified.
+
+Use `grunt` to compress an uglified file after you make changes.
+
+*Please do not submit a PR with a compiled file for dev.*
+
+# Tests
+Run `npm test` to execute mocha tests.
