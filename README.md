@@ -30,6 +30,9 @@ Slugify.parse('slugify this for me please');		// slugify-this-for-me-please
 # NPM
 Install with npm: `npm install slugifyjs`
 
+# Bower
+Install with bower: `bower install slugifyjs`
+
 # Contributing
 Use `grunt dev` to test your changes with a version that is not uglified.
 
