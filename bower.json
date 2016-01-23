@@ -1,0 +1,27 @@
+{
+  "name": "slugifyjs",
+  "description": "Javascript slugify routine, handling diacritics / accents.",
+  "main": "./min/slugify.en.min.js",
+  "authors": [
+    "Anthony Matarazzo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "slugify",
+    "slugifyjs",
+    "slugify-js",
+    "slug"
+  ],
+  "homepage": "https://github.com/createvibe/slugify.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
