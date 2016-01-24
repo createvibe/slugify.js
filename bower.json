@@ -1,6 +1,6 @@
 {
   "name": "slugifyjs",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Javascript slugify routine, handling diacritics / accents.",
   "main": "./min/slugify.en.min.js",
   "authors": [
